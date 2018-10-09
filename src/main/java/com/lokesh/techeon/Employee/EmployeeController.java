@@ -1,5 +1,8 @@
 package com.lokesh.techeon.Employee;
 
+/*
+EmployeeController is a Rest Controller which will handle all the service apis.
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

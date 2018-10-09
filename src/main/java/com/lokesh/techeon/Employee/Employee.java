@@ -2,10 +2,13 @@ package com.lokesh.techeon.Employee;
 
 import javax.persistence.*;
 
+/*
+This is an Enitity class, which has attributes id, name, designation, department, and salary.
+ */
+
 @Entity
 @Table(name = "employee")
 public class Employee {
-    private static final long serialVersionUID = -3009157732242241606L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
