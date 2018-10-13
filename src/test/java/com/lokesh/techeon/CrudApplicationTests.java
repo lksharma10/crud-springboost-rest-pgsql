@@ -12,5 +12,4 @@ public class CrudApplicationTests {
     @Test
     public void contextLoads() {
     }
-
 }

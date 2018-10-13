@@ -12,21 +12,26 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private int id;
+    @Column(name = "id")
+    private Integer id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "designation")
     private String designation;
 
+    @Column(name = "department")
     private String department;
 
+    @Column(name = "salary")
     private double salary;
 
     public Employee() {
 
     }
 
-    public Employee(int id, String name, String designation, String department, double salary) {
+    public Employee(Integer id, String name, String designation, String department, double salary) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -34,11 +39,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

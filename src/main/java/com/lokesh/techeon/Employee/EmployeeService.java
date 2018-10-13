@@ -22,7 +22,7 @@ public class EmployeeService {
         return employees;
     }
 
-    public Employee getEmployee(int id) {
+    public Employee getEmployee(Integer id) {
         //return Employees.stream().filter(t -> t.getId().equals(id)).findFirst().get();
         Employee emp = employeeRepository.findById(id).get();
         return emp;
@@ -38,5 +38,18 @@ public class EmployeeService {
 
     void deleteEmployee(int id) {
         employeeRepository.deleteById(id);
+    }
+
+    public Employee getEmployeeByName(String name, Integer id) {
+        Employee emp = employeeRepository.findEmployeeByNameAAndAndId(name, id).get();
+        return emp;
+    }
+
+    /*
+    Function to Update the Employee by Name and Id
+    XXX: Id is used to uniquely identify the Employee
+     */
+    public void updateEmployeeByNameAndId(String name, Integer id, Employee emp) {
+        employeeRepository.saveEmployee(emp.getDesignation(),emp.getDepartment(),emp.getSalary(), name, id);
     }
 }
