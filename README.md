@@ -7,7 +7,7 @@ Project is developed under intellij Idea Ultimate version,
 
 This Porject is developed using jdk10.0.2.
 
-For Database, I have used Postgres SQL,
+For Database, I have used Postgres SQL,with userName = 'postgres' and password='root'
 Employee table have only id, name, designation, department, and salary attributes.
 
 Application have following dependencies,
@@ -19,7 +19,7 @@ Application have following dependencies,
   
 Steps to follow to set up the project:
   : Download Intellij Idea IDE,
-  : Download Postgres SQL.
+  : Download Postgres SQL, set passowrd of the superuser to ='root'
   : Download Project from github.
   : Open the project in Intellij Idea.
   : You may be required to update the location of JDK.
