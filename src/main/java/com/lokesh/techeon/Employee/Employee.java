@@ -1,5 +1,7 @@
 package com.lokesh.techeon.Employee;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /*
@@ -7,6 +9,7 @@ This is an Enitity class, which has attributes id, name, designation, department
  */
 
 @Entity
+@Data
 @Table(name = "employee")
 public class Employee {
     @Id

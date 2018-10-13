@@ -49,8 +49,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-10-06.15:58:44.029</IntrospectionTimestamp>
-      <IntrospectionStateNumber>626</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-10-13.13:35:07.894</IntrospectionTimestamp>
+      <IntrospectionStateNumber>647</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -86,52 +86,48 @@
       <CacheSize>1</CacheSize>
     </sequence>
     <table id="17" parent="9" name="employee">
-      <ObjectId>16408</ObjectId>
+      <ObjectId>24576</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>626</StateNumber>
+      <StateNumber>647</StateNumber>
     </table>
     <column id="18" parent="17" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>626</StateNumber>
+      <StateNumber>647</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="19" parent="17" name="name">
+    <column id="19" parent="17" name="department">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>626</StateNumber>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>647</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="20" parent="17" name="designation">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>626</StateNumber>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>647</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="21" parent="17" name="department">
+    <column id="21" parent="17" name="name">
       <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>626</StateNumber>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>647</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="22" parent="17" name="salary">
       <Position>5</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>626</StateNumber>
-      <TypeId>1043</TypeId>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>647</StateNumber>
+      <TypeId>701</TypeId>
     </column>
     <index id="23" parent="17" name="employee_pkey">
-      <ObjectId>16411</ObjectId>
+      <ObjectId>24582</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="24" parent="17" name="employee_pkey">
-      <ObjectId>16412</ObjectId>
+      <ObjectId>24583</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>employee_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
