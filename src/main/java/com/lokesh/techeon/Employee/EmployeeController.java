@@ -27,8 +27,9 @@ public class EmployeeController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/Employees")
-    public void addEmployee(@RequestBody Employee Employee) {
-        employeeService.addEmployee(Employee);
+    public Employee addEmployee(@RequestBody Employee Employee) {
+        System.out.println("ADDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD\n");
+        return employeeService.addEmployee(Employee);
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/Employees/{id}")

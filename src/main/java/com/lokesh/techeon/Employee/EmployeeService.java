@@ -28,8 +28,11 @@ public class EmployeeService {
         return emp;
     }
 
-    public void addEmployee(Employee Employee) {
-        employeeRepository.save(Employee);
+    public Employee addEmployee(Employee employee) {
+        employeeRepository.save(employee);
+
+        Employee retEmp= employeeRepository.findById(employee.getId()).get();
+        return retEmp;
     }
 
     void updateEmployee(String id, Employee Employee) {
